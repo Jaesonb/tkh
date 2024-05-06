@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'League Spartan', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.material-icons-outlined {
+  vertical-align: middle;
+  line-height: 1px;
+}
+
+.navbar-brand > .material-icons-outlined {
+  font-size: 40px;
+}
+
+.about > .material-icons-outlined {
+  font-size: 50px;
+}
+
+.card > img {
+  height: 250px;
+}
+
+.testimonial > img {
+  height: 50px;
+  width: 50px;
+}
+
+#map {
+  height: 300px;
+}
+
+.navbar.navbar-light .navbar-nav .nav-link {
+  color: white;
+  opacity: 70;
+}
+
+h2.text-center.fw-bold.mb-2 {
+  color: black;
+}
+
+/* .navbar-brand {
+  color: white;
+} */
+
+
+.animated-text {
+  font-size: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#changing-word {
+  color: red;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* header video section */
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+/* Center content vertically */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  overflow: auto;
+}
+
+.content2 {
+  white-space: normal;
+}
+
+
+.animate1 {
+  /* display: none; Hide the icon by default */
+  color: white;
+  animation: fadeInOut 4s ease-in-out infinite; /* Apply the animation */
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; } /* Start at 0 opacity */
+  50% { opacity: 1; } /* Fade in to full opacity */
+  100% { opacity: 0; } /* Fade out to 0 opacity */
+}
+
+/* .btn-red {
+  background-color: rgb(247, 28, 28);
+  color: white;
+} */
+
+
+/* typewriter effect */
+@keyframes typing {
+  from { width: 0 }
+}
+
+#typewriter-text {
+  overflow: hidden;
+  /* border-right: .10em solid rgb(255, 255, 255); */
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5s steps(30) infinite;
+}
