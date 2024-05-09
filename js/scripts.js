@@ -20,7 +20,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   });
 
   // Array of words to cycle through
-  const words = [ "Reveloution", "Journey" ];
+  const words = [ "Reveloution", "Journey", "Transformation" ];
   let index = 0;
 
   // Function to change the word

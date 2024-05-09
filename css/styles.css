@@ -155,3 +155,35 @@ header {
   z-index: 1;
   overflow: auto;
 } */
+
+
+/* CSS for hover effect
+.navbar.navbar-light .navbar-nav .nav-link  {
+  transition: color 0.3s ease; /* Smooth transition for color change */
+/* } */ 
+
+/* CSS for hover effect on larger screens */
+@media (min-width: 100px) {
+  .navbar-nav .nav-item .nav-link {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+
+.navbar.navbar-light .navbar-nav .nav-link:hover   {
+  color: #b90e0e; /* Change color on hover */
+
+}}
+
+/* Hover effect on headings */
+h2{
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+h2:hover {
+  color: #b90e0e; /* Change color on hover */
+}
+
+h4{
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+h4:hover {
+  color: #b90e0e; /* Change color on hover */
+}
