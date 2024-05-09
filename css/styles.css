@@ -11,6 +11,14 @@ body {
   line-height: 1px;
 }
 
+/* section {
+  border: none; /* Remove border */
+/* } */
+
+/* .row {
+  border: none; /* Remove border */
+/* } */ 
+
 .navbar-brand > .material-icons-outlined {
   font-size: 40px;
 }
