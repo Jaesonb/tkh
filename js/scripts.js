@@ -53,4 +53,35 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   setInterval(typeWriter, 500); // Change letter every 200 milliseconds
   
   
-  
+  // Country selector
+
+    fetch('https://restcountries.com/v3.1/all') // GeoNames API endpoint for all countries
+      .then(response => response.json())
+      .then(data => {
+        const countriesList = document.getElementById('countries');
+        data.forEach(country => {
+          const option = document.createElement('option');
+          option.value = country.name.common; // Use the common name of the country
+          countriesList.appendChild(option);
+        });
+      })
+      .catch(error => console.error('Error fetching countries:', error));
+
+
+// Phone number validator
+
+function validatePhoneNumber() {
+  const phoneInput = document.getElementById('phoneInput');
+  const phoneError = document.getElementById('phoneError');
+  const phoneNumber = phoneInput.value;
+  const phoneRegex = /^\d{3}\d{3}\d{4}$/; // Example regex for format XXXXXXXXXX
+
+  if (phoneRegex.test(phoneNumber)) {
+    phoneError.textContent = ''; // Clear error message
+    phoneInput.classList.remove('invalid-input'); // Remove red border
+    // alert('Valid phone number!');
+  } else {
+    phoneError.textContent = 'Invalid phone number! Please enter a number in the format XXXXXXXXXX.';
+    phoneInput.classList.add('invalid-input'); // Add red border
+  }
+}

@@ -27,6 +27,11 @@ body {
   font-size: 50px;
 }
 
+.contactus > .material-icons-outlined {
+
+  font-size: 150px;
+}
+
 .card > img {
   height: 250px;
 }
@@ -106,14 +111,53 @@ header {
 .animate1 {
   /* display: none; Hide the icon by default */
   color: white;
-  animation: fadeInOut 4s ease-in-out infinite; /* Apply the animation */
+  animation: fadeIn 4s ease-in-out infinite; /* Apply the animation */
 }
 
-@keyframes fadeInOut {
+@keyframes fadeIn {
   0% { opacity: 0; } /* Start at 0 opacity */
   50% { opacity: 1; } /* Fade in to full opacity */
   100% { opacity: 0; } /* Fade out to 0 opacity */
 }
+
+.animate2 {
+  /* display: none; Hide the icon by default */
+  color: white;
+  animation: fade2 3.6s ease-in-out infinite; /* Apply the animation */
+}
+
+@keyframes fade2  {
+  0% { opacity: 0; } /* Start at 0 opacity */
+  50% { opacity: 1; } /* Fade in to full opacity */
+  100% { opacity: 0; } /* Fade out to 0 opacity */
+}
+
+
+.animate3 {
+  /* display: none; Hide the icon by default */
+  color: white;
+  animation: fade3 3.3s ease-in-out infinite; /* Apply the animation */
+}
+
+@keyframes fade3  {
+  0% { opacity: 0; } /* Start at 0 opacity */
+  50% { opacity: 1; } /* Fade in to full opacity */
+  100% { opacity: 0; } /* Fade out to 0 opacity */
+}
+
+.animate4 {
+  /* display: none; Hide the icon by default */
+  color: white;
+  animation: fade4 3s ease-in-out infinite; /* Apply the animation */
+}
+
+@keyframes fade4  {
+  0% { opacity: 0; } /* Start at 0 opacity */
+  50% { opacity: 1; } /* Fade in to full opacity */
+  100% { opacity: 0; } /* Fade out to 0 opacity */
+}
+
+
 
 /* .btn-red {
   background-color: rgb(247, 28, 28);
@@ -186,4 +230,12 @@ h4{
 }
 h4:hover {
   color: #b90e0e; /* Change color on hover */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+.invalid-input {
+  border: 1px solid red;
 }
