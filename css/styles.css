@@ -239,3 +239,21 @@ h4:hover {
 .invalid-input {
   border: 1px solid red;
 }
+
+
+input[type="text"] {
+  border-radius: 30px; /* Adjust the value as needed */
+}
+
+input[type="email"] {
+  border-radius: 30px; /* Adjust the value as needed */
+}
+
+#messageinput {
+  border-radius: 30px; /* Adjust the value as needed */
+}
+
+#subbtn {
+  border-radius: 30px; /* Adjust the value as needed */
+  padding: ;
+}
