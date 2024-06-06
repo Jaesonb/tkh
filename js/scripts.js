@@ -1,31 +1,41 @@
 // Loading screen
+var map;
+
 document.addEventListener("DOMContentLoaded", function() {
+  // Initialize the map when the document is loaded
+  map = L.map('map').setView([6.9271, 79.8612], 13);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution:
+      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  }).addTo(map);
+
   window.addEventListener("load", function() {
       var loadingScreen = document.getElementById('loading-screen');
       var mainContent = document.getElementById('main-content');
       
-      // Hide the loading screen
-      loadingScreen.style.display = 'none';
-      
-      // Show the main content
-      mainContent.style.display = 'block';
-      
-      // Restore overflow for body and html after loading screen is hidden
-      document.body.style.overflow = 'auto';
-      document.documentElement.style.overflow = 'auto';
+      // Add a delay of 2 seconds (2000 milliseconds)
+      setTimeout(function() {
+        // Hide the loading screen
+        loadingScreen.style.display = 'none';
+        
+        // Show the main content
+        mainContent.style.display = 'block';
+        
+        // Restore overflow for body and html after loading screen is hidden
+        document.body.style.overflow = 'auto';
+        document.documentElement.style.overflow = 'auto';
+
+        // Invalidate the map size to ensure it is displayed correctly
+        map.invalidateSize();
+    }, 1000); // 1000 milliseconds = 1 seconds
   });
 });
 
 
 // Leaflet Map
 
-const map = L.map('map').setView([6.9271, 79.8612], 13);
-
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 19,
-  attribution:
-    '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-}).addTo(map);
 
 
 //navbar toggle effect
