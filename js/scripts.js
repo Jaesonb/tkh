@@ -1,3 +1,15 @@
+// Loading screen
+document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("load", function() {
+      var loadingScreen = document.getElementById('loading-screen');
+      var mainContent = document.getElementsById('main-content');
+      
+      loadingScreen.style.display = 'none';
+      mainContent.style.display = 'block';
+  });
+});
+
+
 // Leaflet Map
 
 const map = L.map('map').setView([6.9271, 79.8612], 13);
