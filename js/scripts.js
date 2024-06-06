@@ -85,3 +85,4 @@ function validatePhoneNumber() {
     phoneInput.classList.add('invalid-input'); // Add red border
   }
 }
+
