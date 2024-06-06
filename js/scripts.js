@@ -2,10 +2,17 @@
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("load", function() {
       var loadingScreen = document.getElementById('loading-screen');
-      var mainContent = document.getElementsById('main-content');
+      var mainContent = document.getElementById('main-content');
       
+      // Hide the loading screen
       loadingScreen.style.display = 'none';
+      
+      // Show the main content
       mainContent.style.display = 'block';
+      
+      // Restore overflow for body and html after loading screen is hidden
+      document.body.style.overflow = 'auto';
+      document.documentElement.style.overflow = 'auto';
   });
 });
 
