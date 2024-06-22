@@ -1,6 +1,7 @@
 body,html {
   margin: 0;
   padding: 0;
+  /* padding-top: 20px; */
   font-family: 'League Spartan', sans-serif;
   background-color: black;
   color: white;
