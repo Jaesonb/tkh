@@ -1,4 +1,4 @@
-// Loading screen
+// Loading screen main page
 var map;
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -14,6 +14,32 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("load", function() {
       var loadingScreen = document.getElementById('loading-screen');
       var mainContent = document.getElementById('main-content');
+      
+      // Add a delay of 2 seconds (2000 milliseconds)
+      setTimeout(function() {
+        // Hide the loading screen
+        loadingScreen.style.display = 'none';
+        
+        // Show the main content
+        mainContent.style.display = 'block';
+        
+        // Restore overflow for body and html after loading screen is hidden
+        document.body.style.overflow = 'auto';
+        document.documentElement.style.overflow = 'auto';
+
+        // Invalidate the map size to ensure it is displayed correctly
+        map.invalidateSize();
+    }, 1000); // 1000 milliseconds = 1 seconds
+  });
+});
+
+
+// Loading screen second page
+
+document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("load", function() {
+      var loadingScreen = document.getElementById('loading-screen2');
+      var mainContent = document.getElementById('main-content2');
       
       // Add a delay of 2 seconds (2000 milliseconds)
       setTimeout(function() {
