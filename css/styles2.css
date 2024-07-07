@@ -88,9 +88,9 @@ body,html {
     width: 50px;
   }
   
-  /* #map {
+  #map {
     height: 300px;
-  } */
+  }
   
   .navbar.navbar-light .navbar-nav .nav-link {
     color: white;
@@ -302,7 +302,7 @@ body,html {
   }
   
   #subbtn {
-    border-radius: 20px; /* Adjust the value as needed */
+    border-radius: 15px; /* Adjust the value as needed */
     padding: 10px ;
   }
   
@@ -323,4 +323,12 @@ body,html {
   .animate5 {
     animation: pulse 2s ease-in-out infinite;
   }
+
+  /* hover effect on footer items */
+h6{
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+h6:hover {
+  color: #b90e0e; /* Change color on hover */
+}
   

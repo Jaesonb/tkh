@@ -86,11 +86,11 @@
                   <a class="nav-link me-lg-3" href="#testimonials">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#contact">Contact Details</a>
+                  <a class="nav-link me-lg-3" href="page2.html">Contact Us</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link me-lg-3" href="page2.html"><span class="material-icons-outlined">call</span></a>
-                </li>
+                </li> -->
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown link
@@ -205,13 +205,17 @@
 
         <!-- Projects -->
         <section id="projects" class="text-center py-5 bg-light">
-          <div class="container py-5">
+          <video autoplay muted loop id="video-background2">
+            <source src="assets/bg3.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="container py-4" style="z-index: 10;">
             <div class="row justify-content-center">
-              <h2 class="fw-bold text-black fs-2">Projects</h2>
-              <p class="text-black mb-5 fs-6">View some of our latest projects</p>
+              <h2 class="fw-bold text-black fs-2" style="z-index: 10;">Projects</h2>
+              <p class="text-black mb-5 fs-6" style="z-index: 10;">View some of our latest projects</p>
             </div>
           </div>
-          <div class="container mb-5">
+          <div class="container mb-5" >
             <div class="row">
               <div class="col-lg-4 mx-auto mb-5 animate5">
                 <div class="card h-100 shadow-lg rounded border-0 bg-light">
@@ -415,29 +419,41 @@
     <!-- <hr> -->
 
     <!-- Footer -->
-    <footer class="text-center py-3 pt-5 bg-light ">
+    <footer id = "footer" class="text-center py-3 pt-5 bg-light ">
 
       <div class="container mb-3 py-3">
         <div class="row">
-          <div class="col-lg-3 col-xl-3 col-xxl-3 mb-5 text-black text-start">
+          <div class="col-lg-3 col-xl-3 col-xxl-3 mb-4 text-black text-start">
             <div class="mb-5">
-              <h6 class="text-uppercase mb-2">Home</h6>
+              <h6 class="text-uppercase mb-2">
+                <a class="nav-link me-lg-3" href="index.html">Home</a> 
+              </h6>
             </div>
             <div class="mb-5">
-              <h6 class="text-uppercase mb-2">About</h6>
+              <h6 class="text-uppercase mb-2" > 
+                <a class="nav-link me-lg-3" href="#about">About</a> 
+              </h6>
             </div>
             <div class="mb-5">
-              <h6 class="text-uppercase mb-2">Projects</h6>
+              <h6 class="text-uppercase mb-2" >
+                <a class="nav-link me-lg-3" href="#projects">Projects</a>
+              </h6>
             </div>
             <div class="mb-5">
-              <h6 class="text-uppercase mb-2">Testimonials</h6>
+              <h6 class="text-uppercase mb-2" > 
+                <a class="nav-link me-lg-3" href="#testimonials">Testimonials</a>
+              </h6>
             </div>
             <div class="mb-5">
-              <h6 class="text-uppercase mb-2">Contact Details</h6>
+              <h6 class="text-uppercase mb-2" >
+                <a class="nav-link me-lg-3" href="page2.html">Contact Us</a>
+              </h6>
             </div>
           </div>
 
-          <div class="col-lg-3 col-xl-3 col-xxl-3 mb-5 text-black">
+          
+
+          <div class="col-lg-3 col-xl-3 col-xxl-3 mb-4 text-black text-start d-none d-sm-block ">
             <div class="mb-5">
               <h6 class="text-uppercase mb-2">Address</h6>
               <p class="lead mb-0">Colombo, Sri Lanka</p>
@@ -469,9 +485,11 @@
             </div>
           </div>
 
-          <div class="col-xl-5 col-xxl-6 mb-5">
+          <div class="col-lg-6 col-xl-6 col-xxl-6 mb-4">
             <div id="map" class="shadow-lg"></div>
           </div>
+
+          
         </div>
       </div>
       
