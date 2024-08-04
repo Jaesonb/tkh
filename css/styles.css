@@ -77,6 +77,11 @@ body,html {
   font-size: 150px;
 }
 
+.ContactUs {
+  background-color: #000000;
+
+}
+
 .card > img {
   height: 250px;
 }
